@@ -1,4 +1,4 @@
-	----------Main Plugin By @Reload_Life
+	----------F80 Main Plugin By @Reload_Life
 	--29/Dex/2016 --Start Writing ...
 	-----------------------------------------
 	-----------------------------------------
@@ -838,7 +838,7 @@ ExAdmin = '*Extra Admins Help*\n'
 ..'`>`#لینک : *نمایش نیلک گروه(اگه موجود باشه)*\n'
 ..'`>`#تنظیمات : *تنظیمات گروه*\n'
 ..'`>`#قوانین : *قوانین*\n'
-..'`>`#نرخ : *نمایش قیمت گروه*\n'
+..'`>`#نرخ : *نمایش قیمت گروه*\n',
 Mod = '*GroupModerators Help*\n'
 ..'`>`#ایدی [ریپلی|یوزرنیم|یوزرایدی]: *دریافت ایدی فرد مورد نظر*\n'
 ..'`>`#لینک حذف : *حذف لینک ها*\n'
@@ -1471,8 +1471,8 @@ end
 	end
 end
 	---------------------------
-	local RLM = 326824638 -- Realm ID to Send Charge Panel ! (You Can Set A Privet)
-	local BOT = 371057028 -- Bot Id
+	local RLM = -100 -- Realm ID to Send Charge Panel ! (You Can Set A Privet)
+	local BOT = 0 -- Bot Id
 	local SUP = -100 -- SupportID
 	--CallBacks
 	function getInputFile(file)
@@ -1547,7 +1547,7 @@ end
 	end
 --Remove Groups--
 function rem_gp(msg, chat_id, user_id, username)
-	add = '*Group* '..chat_id..' *Has been SuccsesFully Removed From* *Data Base.*'
+	add = '*Group* '..chat_id..' *Has been SuccsesFully Removed From Data Base.*'
 	send_sup = '*Group *:`'..chat_id..'`\n'
 	..'*Remover* : '..(username or user_id)..'\n'
 	..'---------------------------'
@@ -2841,7 +2841,7 @@ end
 							if matches[1]:lower() == 'reload' and is_sudo(msg) then
 								plugins = {}
   								load_plugins()
-  								tdcli.sendText(chat_id, msg_id, 0, 1, nil, '*Done* `bot Reloaded`', 1, 'md')
+  								tdcli.sendText(chat_id, msg_id, 0, 1, nil, '*Done* `Reloaded`', 1, 'md')
 							end
 
 							--Promote To Sudo
@@ -3327,7 +3327,7 @@ end
   							  	elseif matches[2]:lower() == 'گروه ها' then
   							  		hash = 'groups'
 									list = redis:smembers(hash)
-									text = '*bot Groups List* :\n'
+									text = '*Groups List* :\n'
 									for k,v in pairs(list) do
 										if redis:get('name:'..v) then
 										text = text..'`'..k..'` *'..v..'* \n*Name:* '..redis:get('name:'..v)..'\n*Token:* '..(redis:get('token:'..v) or 'Not Set')..'\n---------\n'
@@ -4196,7 +4196,7 @@ end
 							if matches[1]:lower() == 'reload' and is_sudo(msg) then
 								plugins = {}
   								load_plugins()
-  								tdcli.sendText(chat_id, msg_id, 0, 1, nil, '*Done* `bot Reloaded`', 1, 'md')
+  								tdcli.sendText(chat_id, msg_id, 0, 1, nil, '*Done* `Reloaded`', 1, 'md')
 							end
 
 							--Promote To Sudo
@@ -5400,6 +5400,7 @@ end
 @iborn - @ibornbot
 
 *مراجعه کنید.*
+---------------------
 
 ]]
 								        if replymsg_id ~= 0 then

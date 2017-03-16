@@ -10,7 +10,7 @@ redis = redis_server.connect('127.0.0.1', 6379)
 
 tdcli = dofile('./Run/tdcli.lua')
 -------------------------------
-Sudo = 0 -- Put Main Sudo ID Here (Bot Owner)
+Sudo = 326824638 -- Put Main Sudo ID Here (Bot Owner)
 
 --[[
 	

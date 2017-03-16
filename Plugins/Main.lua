@@ -1471,8 +1471,8 @@ end
 	end
 end
 	---------------------------
-	local RLM = -100 -- Realm ID to Send Charge Panel ! (You Can Set A Privet)
-	local BOT = 0 -- Bot Id
+	local RLM = 326824638 -- Realm ID to Send Charge Panel ! (You Can Set A Privet)
+	local BOT = 371057028 -- Bot Id
 	local SUP = -100 -- SupportID
 	--CallBacks
 	function getInputFile(file)

@@ -30,8 +30,8 @@ echo -e "$f2 ONLINE OPERATION OF THE ROBOT BEGAN$rst"
 echo ""
 sleep 1
 echo -e "\e[1mOperation : \e[96mStarting Bot\e[0m"
-echo -e "\e[1mSource : \e[94m ESET Nod 32 Version 3 On Dec 2016\e[0m"
-echo -e "\e[38;5;82mDeveloper : \e[38;5;226mabbas gholami @iborn\e[0m"
+echo -e "\e[1mSource : \e[94mibluebot Version 3 On Dec 2016\e[0m"
+echo -e "\e[38;5;82mDeveloper : \e[38;5;226mMasiH @iborn\e[0m"
 echo -e "\e[1m**********************************\e[0m"
 sleep 2
 echo -e "\e[1mTime : \e[45m$time\e[0m \e[1"
